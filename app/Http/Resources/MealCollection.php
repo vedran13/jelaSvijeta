@@ -21,7 +21,7 @@ class MealCollection extends ResourceCollection
     {
         $data = [
             'meta' => [
-                'current_page' => $this->currentPage() ?? null,
+                'currentPage' => $this->currentPage() ?? null,
                 'totalItems'  => $this->total() ?? null,
                 'itemsPerPage' => $this->count() ?? null,
                 'totalPages'  => $this->lastPage()  ?? null,
