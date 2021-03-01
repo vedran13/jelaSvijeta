@@ -10,12 +10,11 @@ class CategoryTranslation extends Model
     use HasFactory;
 
     protected $fillable          = ['title', 'slug'];
-    public $translatedAttributes = ['title', 'slug'];
-
     protected $hidden = [
-        'pivot',
-        'translations'
-      ];
+      'pivot',
+      'translations'
+    ];
 
-    public    $timestamps = false;
+    public $translatedAttributes = ['title', 'slug'];
+    public $timestamps = false;
 }

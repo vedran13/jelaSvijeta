@@ -36,7 +36,6 @@ class CreateMealsTranslationTable extends Migration
      */
     public function down()
     {
-        $table->dropColumn('title');
-        $table->dropColumn('description');
+        Schema::dropIfExists('meals_translations');
     }
 }

@@ -10,6 +10,7 @@ class IngredientsTranslation extends Model
     use HasFactory;
 
     protected $fillable          = ['title', 'slug'];
+
     public $translatedAttributes = ['title', 'slug'];
-    public    $timestamps        = false;
+    public $timestamps        = false;
 }

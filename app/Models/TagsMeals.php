@@ -8,5 +8,4 @@ use Illuminate\Database\Eloquent\Model;
 class TagsMeals extends Model
 {
     use HasFactory;
-  
 }

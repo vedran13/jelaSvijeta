@@ -16,7 +16,7 @@ class IngredientsTableSeeder extends Seeder
     public function run()
     {
         $faker = Faker::create();
-        $limit = 50;
+        $limit = 65;
 
         for($i = 0; $i < $limit; $i++){
             DB::table('ingredients')->insert([

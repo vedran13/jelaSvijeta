@@ -16,7 +16,7 @@ class IngredientsTranslationSeeder extends Seeder
     public function run()
     {
         $faker = Faker::create();
-        $limit = 51;
+        $limit = 66;
 
         for($i = 1; $i < $limit; $i++) {
 
@@ -29,7 +29,7 @@ class IngredientsTranslationSeeder extends Seeder
 
             DB::table('ingredients_translations')->insert([
                        'ingredients_id' =>  "$i",
-                       'title'          =>  "Title-of-$i-ingredient",
+                       'title'          =>  "Title of $i ingredient",
                        'slug'           =>  "Slug-of-$i-ingredient",
                        'locale'         =>  'en',
                     ]);

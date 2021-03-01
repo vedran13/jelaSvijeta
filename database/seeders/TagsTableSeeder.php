@@ -17,7 +17,7 @@ class TagsTableSeeder extends Seeder
     {
         //
         $faker = Faker::create();
-        $limit = 50;
+        $limit = 65;
 
         for ($i = 0; $i < $limit; $i++) {
              DB::table('tags')->insert([

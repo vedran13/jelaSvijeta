@@ -16,23 +16,23 @@ class TagsMealsSeeder extends Seeder
     public function run()
     {
         $faker = Faker::create();
-        $limit = 51;
+        $limit = 66;
 
         for ($i = 1; $i < $limit; $i++) {
             
              DB::table('tags_meals')->insert([
-                       'tag_id'     =>  $faker->numberBetween(1,50),
-                       'meal_id'    =>  $faker->numberBetween(1,50),
+                       'tag_id'     =>  $faker->numberBetween(1,65),
+                       'meal_id'    =>  $faker->numberBetween(1,65),
                     ]);
 
              DB::table('tags_meals')->insert([
-                       'tag_id'     =>  $faker->numberBetween(1,50),
-                       'meal_id'    =>  $faker->numberBetween(1,50),
+                       'tag_id'     =>  $faker->numberBetween(1,65),
+                       'meal_id'    =>  $faker->numberBetween(1,65),
                     ]);
 
              DB::table('tags_meals')->insert([
-                       'tag_id'     =>  $faker->numberBetween(1,50),
-                       'meal_id'    =>  $faker->numberBetween(1,50),
+                       'tag_id'     =>  $faker->numberBetween(1,65),
+                       'meal_id'    =>  $faker->numberBetween(1,65),
                     ]);
         }
     }

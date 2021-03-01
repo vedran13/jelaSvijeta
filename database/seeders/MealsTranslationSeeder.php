@@ -17,7 +17,7 @@ class MealsTranslationSeeder extends Seeder
     public function run()
     {
         $faker = Faker::create();
-        $limit = 51;
+        $limit = 66;
 
         for($i = 1; $i < $limit; $i++) {
             DB::table('meals_translations')->insert([

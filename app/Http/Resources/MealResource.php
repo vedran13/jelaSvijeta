@@ -4,7 +4,6 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-
 class MealResource extends JsonResource
 {
     /**
@@ -18,8 +17,6 @@ class MealResource extends JsonResource
 
     public function toArray($request)
     {
-
-    
         $timeStamp = $request->get('diff_time');
         $date      = date("Y-m-d H:i:s", $timeStamp);
 
@@ -40,19 +37,18 @@ class MealResource extends JsonResource
 
         $with = $request->get('with');
 
-        if(!empty($with)){
-            if(str_contains($with,'category')){
+        if (!empty($with)) {
+            if (str_contains($with, 'category')) {
                 $data['category'] = $this->category;
             }
             
-            if(str_contains($with,'tags')){
+            if (str_contains($with, 'tags')) {
                 $data['tags'] = $this->tags;
             }
 
-            if(str_contains($with,'ingredients')){
+            if (str_contains($with, 'ingredients')) {
                 $data['ingredients'] = $this->ingredients;
             }
-
         }
    
         return $data;

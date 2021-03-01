@@ -10,5 +10,6 @@ class TagsTranslation extends Model
     use HasFactory;
 
     protected $fillable = ['title', 'slug'];
-    public    $timestamps = false;
+    
+    public $timestamps = false;
 }

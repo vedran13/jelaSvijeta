@@ -10,19 +10,16 @@ use Astrotomic\Translatable\Translatable;
 
 class Category extends Model implements TranslatableContract
 {
-  use HasFactory;
-  use Translatable; // 2. To add translation methods
-  protected $table = 'category';
+    use HasFactory;
+    use Translatable; // 2. To add translation methods
 
-  protected $hidden = [
+    protected $table = 'category';
+
+    protected $hidden = [
     'pivot',
     'translations'
-  ];
+    ];
 
   // 3. To define which attributes needs to be translated
-  public $translatedAttributes = ['title', 'slug'];
-  //protected $table = 'category';
-
-
-
+    public $translatedAttributes = ['title', 'slug'];
 }

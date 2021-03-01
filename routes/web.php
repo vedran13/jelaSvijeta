@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('meals', 'App\Http\Controllers\MealsController@index');
+Route::get('/meals', 'App\Http\Controllers\MealsController@index');
